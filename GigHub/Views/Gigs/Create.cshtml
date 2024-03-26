@@ -3,6 +3,26 @@
 @{
     ViewBag.Title = "Create";
 }
+<style>
+    /*Overrider bootstrap*/
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-control {
+        font-size: 17px;
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+    .form-control:focus{
+        color:none;
+        background-color:none;
+    }
+    .btn {
+        
+        padding: 6px 16px;
+        border-radius: 12px;
+    }
+</style>
 
 <h2>Create A Gig</h2>
 @using (Html.BeginForm("Create", "Gigs"))
